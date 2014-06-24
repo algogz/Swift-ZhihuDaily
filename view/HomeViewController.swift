@@ -22,8 +22,8 @@ class HomeViewController: UIViewController,SlideScrollViewDelegate {
     let identifier = "cell"
     let url = "http://news-at.zhihu.com/api/3/news/latest"
     
-    let kImageHeight:Float = 400
-    let kInWindowHeight:Float = 200
+    let kImageHeight:CGFloat = 400
+    let kInWindowHeight:CGFloat = 200
     
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

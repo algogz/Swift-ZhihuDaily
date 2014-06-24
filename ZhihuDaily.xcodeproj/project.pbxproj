@@ -25,6 +25,7 @@
 		4D9173591948321E00E64BFB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D9173571948321E00E64BFB /* DetailViewController.xib */; };
 		4D91735B194848F600E64BFB /* shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D91735A194848F600E64BFB /* shadow.png */; };
 		4D91735D1948BA7600E64BFB /* SlideScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D91735C1948BA7600E64BFB /* SlideScrollView.swift */; };
+		9D27E0DF1957E63A00D9772B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D27E0DE1957E63A00D9772B /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		4D9173571948321E00E64BFB /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		4D91735A194848F600E64BFB /* shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shadow.png; sourceTree = "<group>"; };
 		4D91735C1948BA7600E64BFB /* SlideScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideScrollView.swift; sourceTree = "<group>"; };
+		9D27E0DE1957E63A00D9772B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D27E0DF1957E63A00D9772B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 		4D916EDA1946151000E64BFB = {
 			isa = PBXGroup;
 			children = (
+				9D27E0DE1957E63A00D9772B /* Foundation.framework */,
 				4D916EE81946151000E64BFB /* AppDelegate.swift */,
 				4D916F0A194619E000E64BFB /* model */,
 				4D916F0B194619E000E64BFB /* view */,
@@ -336,6 +340,7 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = testSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ZhihuDaily;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -359,6 +364,7 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = testSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = ZhihuDaily;
 				USER_HEADER_SEARCH_PATHS = "";

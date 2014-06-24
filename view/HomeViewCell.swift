@@ -33,9 +33,13 @@ class HomeViewCell: UITableViewCell {
         
         self.titleTextView.text = dic["title"] as String
         
-        var thumbArr = dic["images"] as NSArray
-        var thumbUrl = thumbArr[0] as String
+        if let thumbArr = dic["images"] as? NSArray {
+            // var thumbArr = dic["images"] as NSArray
+            var thumbUrl = thumbArr[0] as String
         
-        self.thumbImage.setImage(thumbUrl,placeHolder: UIImage(named: "avatar.png"))
+            self.thumbImage.setImage(thumbUrl,placeHolder: UIImage(named: "avatar.png"))
+        } else {
+            NSLog("%@", dic["title"] as String)
+        }
     }
 }

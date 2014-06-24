@@ -15,8 +15,8 @@ class DetailViewController: UIViewController,UIScrollViewDelegate {
     var topImage:UIImageView = UIImageView()
     var url = "http://news-at.zhihu.com/api/3/news/" as String
     
-    let kImageHeight:Float = 400
-    let kInWindowHeight:Float = 200
+    let kImageHeight:CGFloat = 400
+    let kInWindowHeight:CGFloat = 200
 
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -28,11 +28,14 @@ class DetailViewController: UIViewController,UIScrollViewDelegate {
         self.webView.scrollView.delegate = self
 
         loadData()
+        var s = self.webView.stringByEvaluatingJavaScriptFromString("1+2+3")
+        println(s)
     }
     
     func loadData()
     {
         url = "\(url)\(aid)"
+        NSLog("%@", url)
         
         YRHttpRequest.requestWithURL(url,completionHandler:{ data in
 
